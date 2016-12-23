@@ -1,7 +1,8 @@
+var respuestaHTML = document.querySelector('#respuesta'),
+template = '';
 export default () => {
-  var respuestaHTML = document.querySelector('#ejemplo-fetch'),
-  template = '';
 
+  // Ejemplo AJAX con Fetch
   fetch('http://jsonplaceholder.typicode.com/photos')
   .then((response) => {
     return response.json()
