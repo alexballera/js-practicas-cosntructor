@@ -1,4 +1,4 @@
-import formularios from './lib/formularios'
+// import formularios from './lib/formularios'
 
 (() => {
   'use strict'
@@ -6,6 +6,6 @@ import formularios from './lib/formularios'
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
-    formularios()
+    // formularios()
   }
 })()
