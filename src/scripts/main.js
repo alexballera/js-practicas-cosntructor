@@ -1,4 +1,5 @@
 // import formularios from './lib/formularios'
+import ejemploFetch from './lib/ejemploFetch'
 
 (() => {
   'use strict'
@@ -7,5 +8,6 @@
 
   function onDOMLoad () {
     // formularios()
+    ejemploFetch()
   }
 })()
