@@ -1,0 +1,22 @@
+{
+  "name": "practicas",
+  "version": "1.0.0",
+  "description": "Practicas con Javascript",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexballera/practicas-js.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Alex Ballera <alexballera@gmail.com> (http://alexballera.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexballera/practicas-js/issues"
+  },
+  "homepage": "https://github.com/alexballera/practicas-js#readme"
+}
