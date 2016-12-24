@@ -1,0 +1,15 @@
+.contenedor{
+  padding: 2rem 5rem;
+  >h1{
+    text-transform: uppercase;
+  }
+  >button{
+    padding: 1rem;
+    background-color: orange;
+    color: purple;
+    &:hover{
+      background-color: purple;
+      color: orange;
+    }
+  }
+}
