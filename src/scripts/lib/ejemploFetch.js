@@ -8,7 +8,7 @@ export default () => {
     return response.json()
   })
   .then((albums) => {
-    albums.forEach(function (elem) {
+    albums.forEach( elem => {
       template +=
         `<a href="${elem.url}">
           <img src="${elem.thumbnailUrl}"/>

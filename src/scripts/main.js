@@ -1,7 +1,12 @@
 // import formularios from './lib/formularios'
 // import ejemploFetch from './lib/ejemploFetch'
 // import closure from './lib/closure'
-import json from './lib/json'
+// import json from './lib/json'
+// import object from './lib/object'
+// import prototype from './lib/prototype'
+// import getset from './lib/getset'
+// import pingpong from './lib/pingpong'
+import objectClass from './lib/objectClass'
 
 (() => {
   'use strict'
@@ -12,6 +17,11 @@ import json from './lib/json'
     // formularios()
     // ejemploFetch()
     // closure()
-    json()
+    // json()
+    // object()
+    // prototype()
+    // getset()
+    // pingpong()
+    objectClass()
   }
 })()
