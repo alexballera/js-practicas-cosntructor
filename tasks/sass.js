@@ -21,28 +21,29 @@ var plumberOptions = {
   errorHandler: onError
 }
 
+var autoprefixerOptions = {
+  browsers: ['last 2 versions']
+}
+var sassOptions = {
+  includePaths: [
+  ]
+  // outputStyle: 'compressed'
+}
+var reloadOptions = {
+  stream: true
+}
+
 gulp.task('styles', () => {
-  var autoprefixerOptions = {
-    browsers: ['last 2 versions']
-  }
-  var sassOptions = {
-    includePaths: [
-    ]
-    // outputStyle: 'compressed'
-  }
-  var reloadOptions = {
-    stream: true
-  }
   return gulp.src('./src/styles/scss/style.scss')
-    .pipe(sassGlob())
-    .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(sass(sassOptions).on('error', sass.logError))
-    .pipe(plumber(plumberOptions))
-    .pipe(gulp.dest('./build/styles'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(cssnano())
-    .pipe(gulp.dest('./src/styles'))
-    .pipe(gulp.dest('./build/styles'))
-    .pipe(gulp.dest('./public/styles'))
-    .pipe(browserSync.reload(reloadOptions))
+  .pipe(sassGlob())
+  .pipe(autoprefixer(autoprefixerOptions))
+  .pipe(sass(sassOptions).on('error', sass.logError))
+  .pipe(plumber(plumberOptions))
+  .pipe(gulp.dest('./build/styles'))
+  .pipe(rename({ suffix: '.min' }))
+  .pipe(cssnano())
+  .pipe(gulp.dest('./src/styles'))
+  .pipe(gulp.dest('./build/styles'))
+  .pipe(gulp.dest('./public/styles'))
+  .pipe(browserSync.reload(reloadOptions))
 })

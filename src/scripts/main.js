@@ -6,7 +6,8 @@
 // import prototype from './lib/prototype'
 // import getset from './lib/getset'
 // import pingpong from './lib/pingpong'
-import objectClass from './lib/objectClass'
+// import objectClass from './lib/objectClass'
+import dom from './lib/dom.js'
 
 (() => {
   'use strict'
@@ -22,6 +23,7 @@ import objectClass from './lib/objectClass'
     // prototype()
     // getset()
     // pingpong()
-    objectClass()
+    // objectClass()
+    dom()
   }
 })()

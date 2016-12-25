@@ -6,20 +6,20 @@ import uglify from 'gulp-uglify'
 import babelify from 'babelify'
 import rename from 'gulp-rename'
 
-gulp.task('scripts', () => {
-  var presets = {
-    presets: 'latest'
-  }
+var presets = {
+  presets: 'latest'
+}
 
+gulp.task('scripts', () => {
   return browserify('./src/scripts/main.js')
-    .transform(babelify, {presets})
-    .bundle()
-    .pipe(source('main.js'))
-    .pipe(buffer())
-    .pipe(gulp.dest('./build/scripts'))
-    .pipe(uglify())
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('./src/scripts'))
-    .pipe(gulp.dest('./build/scripts'))
-    .pipe(gulp.dest('./public/scripts'))
+  .transform(babelify, {presets})
+  .bundle()
+  .pipe(source('main.js'))
+  .pipe(buffer())
+  .pipe(gulp.dest('./build/scripts'))
+  .pipe(uglify())
+  .pipe(rename({ suffix: '.min' }))
+  .pipe(gulp.dest('./src/scripts'))
+  .pipe(gulp.dest('./build/scripts'))
+  .pipe(gulp.dest('./public/scripts'))
 })

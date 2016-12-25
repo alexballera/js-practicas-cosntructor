@@ -14,7 +14,7 @@ export default () => {
     }
   }
 
-  // Herencia con extends
+  // Herencia con extends y suṕer
   class Tutor extends Human {
     constructor(nombre,apellido,materia) {
       super(nombre,apellido)
