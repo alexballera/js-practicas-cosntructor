@@ -6,11 +6,12 @@
   >section{
     width: 50%;
     box-sizing: border-box;
+    overflow: hidden;
   }
 }
 .boxLeft,
 .boxRigth{
-  transition: all 1s ease;
+  transition: all 1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
   position: relative;
   width: 100%;
   height: 100px;
@@ -21,23 +22,25 @@
   color: white;
 }
 .boxLeft{
-  left: -70px;
+  left: -100%;
+  background-color: blue;
 }
 .boxRigth{
-  right: -70px;
+  right: -100%;
+  background-color: red;
 }
 .slideToRigth,
 .slideToLeft{
-  transition: all 1s ease;
+  transition: all 1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
   opacity: 1;
 }
 
 .slideToRigth{
-  background-color: red !important;
+  background-color: red;
   left: 0;
 }
 
 .slideToLeft{
-  background-color: blue !important;
+  background-color: blue;
   right: 0;
 }

@@ -14,7 +14,7 @@ export default () => {
   var boxLeft = document.createElement('div')
   boxLeft.setAttribute('id', 'boxLeft')
   boxLeft.setAttribute('class', 'boxLeft')
-  boxLeft.style.backgroundColor = 'blue'
+  // boxLeft.style.backgroundColor = 'blue'
   boxLeft.appendChild(document.createElement('h2'))
   boxLeft.querySelector('h2').innerHTML = 'Izq'
 
@@ -23,7 +23,7 @@ export default () => {
   var boxRigth = document.createElement('div')
   boxRigth.setAttribute('id', 'boxRigth')
   boxRigth.setAttribute('class', 'boxRigth')
-  boxRigth.style.backgroundColor = 'red'
+  // boxRigth.style.backgroundColor = 'red'
   boxRigth.appendChild(document.createElement('h2'))
   boxRigth.querySelector('h2').innerHTML = 'Der'
 
