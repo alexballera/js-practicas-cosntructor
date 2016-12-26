@@ -4,22 +4,40 @@ var ticking = false;
 
 export default () => {
 
-  var div = document.createElement('div')
-  div.setAttribute('id', 'innerBox')
-  div.setAttribute('class', 'innerBox')
-  div.style.width = '50px'
-  div.style.height = '50px'
-  div.style.backgroundColor = 'blue'
-  div.style.position = 'relative'
-  div.style.left = '-200px'
+  var leftSection = document.createElement('section')
+  var rigthSection = document.createElement('section')
+  respuesta.appendChild(leftSection)
+  respuesta.appendChild(rigthSection)
+  leftSection.setAttribute('class', 'content-left')
+  rigthSection.setAttribute('class', 'content-rigth')
 
-  respuesta.appendChild(div)
+  var boxLeft = document.createElement('div')
+  boxLeft.setAttribute('id', 'boxLeft')
+  boxLeft.setAttribute('class', 'boxLeft')
+  boxLeft.style.backgroundColor = 'blue'
+  boxLeft.style.marginBottom = '700px'
+
+  leftSection.appendChild(boxLeft)
+
+  var boxRigth = document.createElement('div')
+  boxRigth.setAttribute('id', 'boxRigth')
+  boxRigth.setAttribute('class', 'boxRigth')
+  boxRigth.style.backgroundColor = 'red'
+  boxRigth.style.marginBottom = '700px'
+
+  rigthSection.appendChild(boxRigth)
 
   function doSomething(scroll_pos) {
     if (scroll_pos >= 100) {
-      div.classList.add('animacion')
+      boxLeft.classList.add('moveToRigth')
+      boxRigth.classList.add('moveToLeft')
     } else {
-      div.classList.remove('animacion')
+      boxLeft.classList.remove('moveToRigth')
+      boxRigth.classList.remove('moveToLeft')
+    }
+    if (scroll_pos >= 400) {
+      boxLeft.classList.remove('moveToRigth')
+      boxRigth.classList.remove('moveToLeft')
     }
   }
 
