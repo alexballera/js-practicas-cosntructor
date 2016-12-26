@@ -22,18 +22,18 @@
 .boxRigth{
   right: -70px;
 }
-.moveToRigth,
-.moveToLeft{
+.slideToRigth,
+.slideToLeft{
   transition: all 1s ease;
   opacity: 1;
 }
 
-.moveToRigth{
+.slideToRigth{
   background-color: red !important;
   left: 0;
 }
 
-.moveToLeft{
+.slideToLeft{
   background-color: blue !important;
   right: 0;
 }

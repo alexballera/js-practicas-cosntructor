@@ -29,15 +29,15 @@ export default () => {
 
   function doSomething(scroll_pos) {
     if (scroll_pos >= 100) {
-      boxLeft.classList.add('moveToRigth')
-      boxRigth.classList.add('moveToLeft')
+      boxLeft.classList.add('slideToRigth')
+      boxRigth.classList.add('slideToLeft')
     } else {
-      boxLeft.classList.remove('moveToRigth')
-      boxRigth.classList.remove('moveToLeft')
+      boxLeft.classList.remove('slideToRigth')
+      boxRigth.classList.remove('slideToLeft')
     }
     if (scroll_pos >= 400) {
-      boxLeft.classList.remove('moveToRigth')
-      boxRigth.classList.remove('moveToLeft')
+      boxLeft.classList.remove('slideToRigth')
+      boxRigth.classList.remove('slideToLeft')
     }
   }
 
