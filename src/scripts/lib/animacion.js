@@ -15,7 +15,8 @@ export default () => {
   boxLeft.setAttribute('id', 'boxLeft')
   boxLeft.setAttribute('class', 'boxLeft')
   boxLeft.style.backgroundColor = 'blue'
-  boxLeft.style.marginBottom = '700px'
+  boxLeft.appendChild(document.createElement('h2'))
+  boxLeft.querySelector('h2').innerHTML = 'Izq'
 
   leftSection.appendChild(boxLeft)
 
@@ -23,7 +24,8 @@ export default () => {
   boxRigth.setAttribute('id', 'boxRigth')
   boxRigth.setAttribute('class', 'boxRigth')
   boxRigth.style.backgroundColor = 'red'
-  boxRigth.style.marginBottom = '700px'
+  boxRigth.appendChild(document.createElement('h2'))
+  boxRigth.querySelector('h2').innerHTML = 'Der'
 
   rigthSection.appendChild(boxRigth)
 
