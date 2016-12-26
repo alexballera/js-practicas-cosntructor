@@ -9,6 +9,7 @@
   & h1{
     text-transform: uppercase;
     font-size: 2rem;
+    margin-bottom: 400px;
   }
   & h2{
     font-size: 1.75rem;
@@ -41,4 +42,14 @@
   >canvas{
     border: solid;
   }
+}
+.innerBox{
+  transition: all 3s ease;
+  margin-bottom: 700px;
+}
+.animacion{
+  display: block;
+  background-color: red !important;
+  transform: translateX(300px);
+  transition: all 3s ease;
 }

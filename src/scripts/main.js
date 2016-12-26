@@ -7,7 +7,8 @@
 // import getset from './lib/getset'
 // import pingpong from './lib/pingpong'
 // import objectClass from './lib/objectClass'
-import dom from './lib/dom.js'
+// import dom from './lib/dom.js'
+import animation from './lib/animation.js'
 
 (() => {
   'use strict'
@@ -24,6 +25,7 @@ import dom from './lib/dom.js'
     // getset()
     // pingpong()
     // objectClass()
-    dom()
+    // dom()
+    animation()
   }
 })()
