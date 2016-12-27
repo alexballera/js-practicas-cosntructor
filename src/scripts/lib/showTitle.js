@@ -6,7 +6,7 @@ export default () => {
 
   var section = document.createElement('section')
   respuesta.appendChild(section)
-  section.setAttribute('class', 'content')
+  section.setAttribute('class', 'content_section')
 
   var container_title = document.createElement('div')
   container_title.setAttribute('id', 'container_title')
