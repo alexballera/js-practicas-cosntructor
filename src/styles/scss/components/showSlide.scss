@@ -1,13 +1,17 @@
-.container{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  height: 800px;
-  >section.content-left,
-  >section.content-rigth{
-    width: 50%;
-    box-sizing: border-box;
-    overflow: hidden;
+.content{
+  overflow: hidden;
+  padding: 2rem 5rem;
+  >.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 800px;
+    >section.content-left,
+    >section.content-rigth{
+      width: 50%;
+      box-sizing: border-box;
+
+    }
   }
 }
 .boxLeft,

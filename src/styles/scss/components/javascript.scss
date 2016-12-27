@@ -1,45 +1,47 @@
 .contenedor{
-  padding: 2rem 5rem;
-  & h1,
-  & h2,
-  & h3{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  & h1{
-    text-transform: uppercase;
-    font-size: 2rem;
-    margin-bottom: 400px;
-  }
-  & h2{
-    font-size: 1.75rem;
-  }
-  & h3{
-    font-size: 1.5rem;
-  }
-  & h4{
-    font-size: 1.25rem;
-  }
-  >#respuesta{
-    >form{
-      >input[type='email']{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        padding: 10px;
-        width: 300px;
+  .content{
+    padding: 2rem 5rem;
+    & h1,
+    & h2,
+    & h3{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    & h1{
+      text-transform: uppercase;
+      font-size: 2rem;
+      margin-bottom: 400px;
+    }
+    & h2{
+      font-size: 1.75rem;
+    }
+    & h3{
+      font-size: 1.5rem;
+    }
+    & h4{
+      font-size: 1.25rem;
+    }
+    >#respuesta{
+      >form{
+        >input[type='email']{
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          padding: 10px;
+          width: 300px;
+        }
+      }
+      >button{
+        padding: 1rem;
+        background-color: orange;
+        color: purple;
+        &:hover{
+          background-color: purple;
+          color: white;
+        }
       }
     }
-    >button{
-      padding: 1rem;
-      background-color: orange;
-      color: purple;
-      &:hover{
-        background-color: purple;
-        color: white;
-      }
+    >canvas{
+      border: solid;
     }
-  }
-  >canvas{
-    border: solid;
   }
 }
