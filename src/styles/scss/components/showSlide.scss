@@ -3,7 +3,8 @@
   flex-flow: row wrap;
   justify-content: center;
   height: 800px;
-  >section{
+  >section.content-left,
+  >section.content-rigth{
     width: 50%;
     box-sizing: border-box;
     overflow: hidden;

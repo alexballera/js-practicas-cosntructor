@@ -13,16 +13,12 @@ export default () => {
   container_title.setAttribute('class', 'container_title')
   container_title.appendChild(document.createElement('h2'))
   container_title.querySelector('h2').innerHTML = 'Izq'
-
   section.appendChild(container_title)
 
   function animation(scroll_pos) {
-    if (scroll_pos >= 100) {
+    if (scroll_pos >= 100 && scroll_pos <= 300) {
       container_title.classList.add('slideToDown')
     } else {
-      container_title.classList.remove('slideToDown')
-    }
-    if (scroll_pos >= 400) {
       container_title.classList.remove('slideToDown')
     }
   }

@@ -30,14 +30,10 @@ export default () => {
   rigthSection.appendChild(boxRigth)
 
   function animation(scroll_pos) {
-    if (scroll_pos >= 100) {
+    if (scroll_pos >= 100 && scroll_pos <= 400) {
       boxLeft.classList.add('slideToRigth')
       boxRigth.classList.add('slideToLeft')
     } else {
-      boxLeft.classList.remove('slideToRigth')
-      boxRigth.classList.remove('slideToLeft')
-    }
-    if (scroll_pos >= 400) {
       boxLeft.classList.remove('slideToRigth')
       boxRigth.classList.remove('slideToLeft')
     }
