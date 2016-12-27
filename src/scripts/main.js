@@ -8,8 +8,8 @@
 // import pingpong from './lib/pingpong'
 // import objectClass from './lib/objectClass'
 // import dom from './lib/dom.js'
-// import showSlide from './lib/showSlide.js'
-import showTitle from './lib/showTitle.js'
+import showSlide from './lib/showSlide.js'
+// import showTitle from './lib/showTitle.js'
 
 (() => {
   'use strict'
@@ -27,7 +27,7 @@ import showTitle from './lib/showTitle.js'
     // pingpong()
     // objectClass()
     // dom()
-    // showSlide()
-    showTitle()
+    showSlide()
+    // showTitle()
   }
 })()
