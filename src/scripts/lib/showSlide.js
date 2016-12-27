@@ -29,7 +29,7 @@ export default () => {
 
   rigthSection.appendChild(boxRigth)
 
-  function doSomething(scroll_pos) {
+  function animation(scroll_pos) {
     if (scroll_pos >= 100) {
       boxLeft.classList.add('slideToRigth')
       boxRigth.classList.add('slideToLeft')
@@ -48,7 +48,7 @@ export default () => {
     // document.title = scrollVertical
       if (!ticking) {
         window.requestAnimationFrame(function() {
-          doSomething(scrollVertical)
+          animation(scrollVertical)
           ticking = false;
         })
       }
