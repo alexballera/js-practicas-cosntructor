@@ -6,20 +6,27 @@ export default () => {
 
   var section = document.createElement('section')
   respuesta.appendChild(section)
-  section.setAttribute('class', 'content-left')
+  section.setAttribute('class', 'content')
 
   var container_title = document.createElement('div')
   container_title.setAttribute('id', 'container_title')
   container_title.setAttribute('class', 'container_title')
   container_title.appendChild(document.createElement('h2'))
-  container_title.querySelector('h2').innerHTML = 'Izq'
+
   section.appendChild(container_title)
+
+  var title = container_title.querySelector('h2')
+  title.innerHTML = 'Título'
+  title.setAttribute('class', 'title')
+
+
 
   function animation(scroll_pos) {
     if (scroll_pos >= 100 && scroll_pos <= 300) {
-      container_title.classList.add('slideToDown')
+      console.log('aqui')
+      title.classList.add('slideToDown')
     } else {
-      container_title.classList.remove('slideToDown')
+      title.classList.remove('slideToDown')
     }
   }
 
