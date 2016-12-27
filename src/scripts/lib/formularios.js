@@ -33,7 +33,7 @@ var template = `
   </div>
 </div>`
 export default () => {
-  $('body').prepend(template)
+  $('#respuesta').prepend(template)
 
   $('#dialog').hide()
 

@@ -33,6 +33,7 @@ export default () => {
   showSlide()
 
   var animateScroll = () => {
+
     window.addEventListener('scroll', function(e) {
       scrollVertical = window.scrollY
       // document.title = scrollVertical

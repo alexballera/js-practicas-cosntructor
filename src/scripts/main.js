@@ -1,4 +1,4 @@
-// import formularios from './lib/formularios'
+import formularios from './lib/formularios'
 // import ejemploFetch from './lib/ejemploFetch'
 // import closure from './lib/closure'
 // import json from './lib/json'
@@ -8,7 +8,7 @@
 // import pingpong from './lib/pingpong'
 // import objectClass from './lib/objectClass'
 // import dom from './lib/dom.js'
-import showSlide from './lib/showSlide.js'
+// import showSlide from './lib/showSlide.js'
 // import showTitle from './lib/showTitle.js'
 
 (() => {
@@ -17,7 +17,7 @@ import showSlide from './lib/showSlide.js'
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
-    // formularios()
+    formularios()
     // ejemploFetch()
     // closure()
     // json()
@@ -27,7 +27,7 @@ import showSlide from './lib/showSlide.js'
     // pingpong()
     // objectClass()
     // dom()
-    showSlide()
+    // showSlide()
     // showTitle()
   }
 })()
